@@ -1,0 +1,14 @@
+# idea
+.idea
+
+# dependances project
+node_modules
+
+# test folder
+exemple
+
+# dist folder
+lib
+
+# other file
+.DS_Store
