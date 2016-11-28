@@ -1,5 +1,3 @@
-var src = './src/';
-var dest = './lib';
 var report = require('jshint-stylish');
 
 module.exports = {
@@ -7,17 +5,22 @@ module.exports = {
   js: {
 
     src: [
-      src + 'EventError.js',
-      src + 'EventUtils.js',
-      src + 'SimpleEmmiter.js',
-      src + 'SimpleObserver.js'
+      './src/EventError.js',
+      './src/EventUtils.js',
+      './src/CustomEvent.js'
     ],
 
     outputName: 'SimpleEvent.js',
 
     reporter: report,
 
-    outputFolder: dest
+    outputFolder: './lib/'
+
+  },
+
+  jsdoc: {
+
+    src: './docs/API.md'
 
   }
 

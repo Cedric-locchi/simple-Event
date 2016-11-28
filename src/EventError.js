@@ -2,7 +2,8 @@
 
 /**
  * @class ErrorEventNotFound
- * @summary Custom Event Error for Emitter class
+ * @constructor
+ * @description Custom Event Error for Emitter class
  * @author Cedric locchi
  * @version 0.0.1
  */
@@ -18,7 +19,8 @@ ErrorEventNotFound.prototype.constructor = ErrorEventNotFound;
 
 /**
  * @class ErrorEventCallback
- * @summary Custom Callback Error for Emitter class
+ * @constructor
+ * @description Custom Callback Error for Emitter class
  * @author Cedric locchi
  * @version 0.0.1
  */
@@ -34,7 +36,8 @@ ErrorEventCallback.prototype.constructor = ErrorEventCallback;
 
 /**
  * @class ErrorFunctionForObserver
- * @summary Custom Observer notify Error for Observers class
+ * @constructor 
+ * @description Custom Observer notify Error for Observers class
  * @author Cedric locchi
  * @version 0.0.1
  */

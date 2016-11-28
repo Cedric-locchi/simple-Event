@@ -12,7 +12,7 @@ for use emitter class:
 
 ```javascript
 
-  var emit = new SimpleEmitter();
+  var emit = new CustomEvent();
 
   emit.on('eventCustom', function (data) {
       console.log(data);
@@ -31,7 +31,7 @@ Create a class that will use the class Observer:
 
   var button = function(){
       this.observers = {
-          click: new SimpleObeserver()
+          click: new CustomEvent()
       }
   }
 
@@ -61,11 +61,15 @@ and use this class like this
   });
 
   btn.click();
-  
+
 ```
+
+[API documentation](docs/API.md)
+
 
 ### TODO LIST
 
 - [ ] Make a units tests
+- [ ] Make a better API documentation
 - [ ] Commonjs module
 - [ ] ES6 ready
