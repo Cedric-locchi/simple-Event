@@ -4,6 +4,8 @@
  * @summary check if the callback is valide
  * @param callback
  * @returns trus if the callback is valide
+ * @author Cedric locchi
+ * @version 0.0.1
  */
 function isValidCallbackListener(callback) {
     if (typeof callback !== 'function') {
@@ -15,8 +17,10 @@ function isValidCallbackListener(callback) {
 
 /**
  * @summary define a default listener if the event is undefined
- * @param event 
+ * @param event
  * @param listener
+ * @author Cedric locchi
+ * @version 0.0.1
  */
 function defaultListener (event, listener) {
     if (typeof listener[event] === 'undefined') {
@@ -28,6 +32,8 @@ function defaultListener (event, listener) {
  * @summary check if the event exist in listener
  * @param event
  * @param listener
+ * @author Cedric locchi
+ * @version 0.0.1
  */
 function isIndexOfListenerExist (event, listener) {
     var index = Object.keys(listener).indexOf(event);
@@ -37,4 +43,17 @@ function isIndexOfListenerExist (event, listener) {
     }
 
     return true;
+}
+
+/**
+ * @summary check if the event is a function
+ * @param event
+ * @param listener
+ * @author Cedric locchi
+ * @version 0.0.1
+ */
+function eventNotifyIsFunction(event){
+  if(typeof event !== 'function') {
+    throw new ErrorFunctionForObserver('notify must be a function');
+  }
 }

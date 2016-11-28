@@ -30,3 +30,19 @@ function ErrorEventCallback(message) {
 
 ErrorEventCallback.prototype = Object.create(Error.prototype);
 ErrorEventCallback.prototype.constructor = ErrorEventCallback;
+
+
+/**
+ * @class ErrorFunctionForObserver
+ * @summary Custom Observer notify Error for Observers class
+ * @author Cedric locchi
+ * @version 0.0.1
+ */
+function ErrorFunctionForObserver(message) {
+    this.name = 'Error, Notify is a function';
+    this.name = message || 'notify error function';
+    this.stack = (new Error()).stack;
+}
+
+ErrorFunctionForObserver.prototype = Object.create(Error.prototype);
+ErrorFunctionForObserver.prototype.constructor = ErrorFunctionForObserver;

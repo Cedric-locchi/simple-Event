@@ -9,7 +9,7 @@
 function SimpleEmitter() {this.Listener = {};}
 
 /**
- * @summary add new listener 
+ * @summary add new listener
  * @param event {String} event name
  * @param callback {Function} callback
  */
@@ -22,8 +22,8 @@ SimpleEmitter.prototype.on = function (event, callback) {
 
 /**
  * @summary emit an event
- * @param event {String} event name 
- * @param data 
+ * @param event {String} event name
+ * @param data
  */
 SimpleEmitter.prototype.emit = function (event, data) {
     if (!(event in this.Listener)) {
@@ -38,8 +38,8 @@ SimpleEmitter.prototype.emit = function (event, data) {
 };
 
 /**
- * @summary remove a listenr 
- * @param event {String} even name 
+ * @summary remove a listenr
+ * @param event {String} even name
  */
 SimpleEmitter.prototype.remove = function (event) {
     if (isIndexOfListenerExist(event, this.Listener)) {
