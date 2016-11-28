@@ -64,7 +64,7 @@ and use this class like this
 
 ```
 
-[API documentation](docs/API.md)
+[API documentation](https://github.com/Cedric-locchi/simple-Event/blob/master/docs/api.md)
 
 
 ### TODO LIST
