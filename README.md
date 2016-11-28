@@ -10,7 +10,8 @@ she's easy to use
 
 for use emitter class:
 
-```
+```javascript
+
   var emit = new SimpleEmitter();
 
   emit.on('eventCustom', function (data) {
@@ -19,13 +20,15 @@ for use emitter class:
 
   emit.emit('eventCustom', [1, 2, 3]);
 
+
 ```
 
 For Use Observer Class:
 
 Create a class that will use the class Observer:
 
-```
+```javascript
+
   var button = function(){
       this.observers = {
           click: new SimpleObeserver()
@@ -44,11 +47,13 @@ Create a class that will use the class Observer:
 
       this.observers['click'].notify(event);
   }
+
 ```
 
 and use this class like this
 
-```
+```javascript
+
   var btn = new button();
 
   btn.addObserver('click', function(){
@@ -56,6 +61,7 @@ and use this class like this
   });
 
   btn.click();
+  
 ```
 
 ### TODO LIST
