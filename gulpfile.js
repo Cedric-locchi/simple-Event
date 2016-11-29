@@ -25,13 +25,9 @@ gulp.task('markDoc', Document.mark);
 
 // default gulp task for build and lint if dev env is true or uglify if prod env is true
 gulp.task('default', function() {
-
   if (conf.env.production === true) {
     sequence('build:prod');
-  }
-
-  if (conf.env.developpement === true) {
+  }else{
     sequence('build:dev', 'lint:dev');
-  }
-
-})
+  };
+});

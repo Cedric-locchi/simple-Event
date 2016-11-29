@@ -32,8 +32,7 @@ module.exports = {
   },
 
   env: {
-    production: true,
-    developpement: false
+    production: false
   }
 
 }

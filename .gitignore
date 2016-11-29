@@ -7,9 +7,6 @@ node_modules
 # test folder
 exemple
 
-# distribution folder
-lib
-
 # html doc
 docs/gen
 
