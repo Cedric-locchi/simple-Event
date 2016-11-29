@@ -10,5 +10,8 @@ exemple
 # distribution folder
 lib
 
+# html doc
+docs/gen
+
 # other file
 .DS_Store
