@@ -9,8 +9,9 @@ var load = require('gulp-load-plugins')(conf.load);
 var build = function() {
   return gulp
       .src(conf.js.src)
+      .pipe(load.clean(conf.js.outputFolder))
       .pipe(load.concat(conf.js.outputName))
-      .pipe(load.useRemo()).pipe(load.lint())
+      .pipe(load.useRemo())
       .pipe(gulp.dest(conf.js.outputFolder));
 }
 
@@ -20,6 +21,7 @@ var build = function() {
 var production = function(){
   return gulp
       .src(conf.js.outputFolder + '/*.js')
+      .pipe(load.clean(conf.js.outputFolder))
       .pipe(load.uglify())
       .pipe(load.rename({ suffix: '.min' }))
       .pipe(gulp.dest(conf.js.outputFolder))
